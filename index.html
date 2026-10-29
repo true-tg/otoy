@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>PR концерту ОТОЙ — Панель керування</title>
+<style>
+html{color-scheme:light}
+body{margin:0;padding:0;font:12px/1.4 Tahoma,Verdana,Arial,sans-serif;color:#222;
+ background:#8a9bb0 repeating-linear-gradient(45deg,#8a9bb0 0,#8a9bb0 3px,#7f90a6 3px,#7f90a6 6px)}
+a{color:#1f4f8f}a:hover{color:#c00;text-decoration:none}
+#wrap{width:980px;max-width:100%;margin:12px auto;background:#fff;border:1px solid #3b4f69;box-shadow:0 0 0 3px #b9c5d5,0 4px 12px rgba(0,0,0,.45)}
+#top{background:#25364f;color:#cfd9e8;font-size:11px;padding:4px 10px;border-bottom:1px solid #111;display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px}
+#top a{color:#fff}
+#head{padding:14px 18px 12px;color:#fff;border-bottom:3px solid #e8a21a;
+ background:linear-gradient(#3b6aa8,#1d3d6e 55%,#17315a 55%,#1b3a68)}
+#head .sub{font-size:11px;color:#c9d8ef;margin-bottom:4px}
+#head h1{margin:0;font:bold 38px/1.05 Impact,'Arial Black',Arial,sans-serif;letter-spacing:1px;text-shadow:2px 2px 0 #0b1b36;text-transform:uppercase}
+#head h1 span{color:#ffd24d}
+#head .resp{margin-top:6px;font-size:13px}
+#head .resp b{color:#ffd24d}
+#menu{background:linear-gradient(#f4f4f4,#d3d8df);border-bottom:1px solid #8c97a6;padding:0 6px;display:flex;flex-wrap:wrap}
+#menu a{display:block;padding:7px 12px;font-weight:bold;color:#1f3550;text-decoration:none;border-right:1px solid #b5bdc9;font-size:12px}
+#menu a:hover,#menu a.on{background:linear-gradient(#fff,#e3e9f2);color:#c00}
+#news{background:#fff6cf;border-bottom:1px solid #d9c36a;padding:3px 8px;font-size:11px;color:#6a4b00}
+#cols{display:flex;gap:10px;padding:10px;align-items:flex-start}
+#left{width:230px;flex:none}#main{flex:1;min-width:0}
+.box{border:1px solid #9aa6b6;margin-bottom:10px;background:#fff}
+.box .t{background:linear-gradient(#5a86bf,#2f5a96);color:#fff;font-weight:bold;padding:4px 8px;border-bottom:1px solid #1b3a68;text-shadow:1px 1px 0 #1b3a68;font-size:12px}
+.box .t.o{background:linear-gradient(#f2b43a,#d98a0a);border-bottom-color:#9a5f00;text-shadow:1px 1px 0 #9a5f00}
+.box .t.r{background:linear-gradient(#d9534f,#a82622);border-bottom-color:#6d1412;text-shadow:1px 1px 0 #6d1412}
+.box .c{padding:8px}
+.poster{display:block;width:100%;height:auto;border:1px solid #444;padding:3px;background:#eee}
+.cap{text-align:center;font-size:10px;color:#666;margin-top:4px}
+ul.m{margin:0;padding:0;list-style:none}
+ul.m li{padding:3px 0 3px 14px;border-bottom:1px dotted #b6bfcc;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M1 1l5 3-5 3z' fill='%232f5a96'/%3E%3C/svg%3E") no-repeat 2px 7px}
+dl{margin:0}dt{float:left;clear:left;width:70px;color:#666}dd{margin:0 0 3px 74px}
+.big{display:flex;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+.cnt{flex:1;min-width:200px;border:2px solid #1d3d6e;background:linear-gradient(#fdfdfd,#e1e7f0);text-align:center;padding:8px}
+.cnt .n{font:bold 64px/1 Impact,'Arial Black',Arial,sans-serif;color:#c00;text-shadow:2px 2px 0 #ddd}
+.cnt .l{font-weight:bold;color:#1d3d6e}
+.cnt small{color:#555;display:block;margin-top:2px}
+.stats{flex:2;min-width:260px}
+table.g{border-collapse:collapse;width:100%;font-size:12px}
+table.g th{background:linear-gradient(#e9edf3,#cdd5e0);border:1px solid #9aa6b6;padding:4px 6px;text-align:left;color:#1f3550}
+table.g td{border:1px solid #c3cbd8;padding:4px 6px;vertical-align:middle}
+table.g tr:nth-child(even) td{background:#f3f6fa}
+table.g tr:hover td{background:#fff3c4}
+.pb{height:13px;border:1px solid #6f7f95;background:#fff;position:relative;min-width:70px}
+.pb i{display:block;height:100%;background:repeating-linear-gradient(-45deg,#4c9a2a 0,#4c9a2a 6px,#66b83f 6px,#66b83f 12px)}
+.pb.b i{background:repeating-linear-gradient(-45deg,#2f5a96 0,#2f5a96 6px,#4a78b5 6px,#4a78b5 12px)}
+.pb.o i{background:repeating-linear-gradient(-45deg,#d98a0a 0,#d98a0a 6px,#f2b43a 6px,#f2b43a 12px)}
+.st{font-weight:bold;font-size:11px;padding:1px 5px;border:1px solid}
+.st.done{color:#2d6a14;border-color:#7fb35f;background:#e6f6dc}
+.st.work{color:#1f4f8f;border-color:#7fa3d6;background:#e4eefb}
+.st.todo{color:#666;border-color:#bbb;background:#f1f1f1}
+.st.late{color:#fff;border-color:#8a0f0f;background:#c82020}
+.num{text-align:right;white-space:nowrap}
+.kpi{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
+.kpi div{flex:1;min-width:70px;border:1px solid #9aa6b6;background:#f6f8fb;text-align:center;padding:4px}
+.kpi b{display:block;font-size:20px;color:#1d3d6e}
+.kpi .r b{color:#c00}.kpi .gr b{color:#2d6a14}
+.dl{margin:0;padding:0;list-style:none}
+.dl li{padding:4px 0;border-bottom:1px dotted #b6bfcc;display:flex;gap:8px}
+.dl .d{flex:none;width:62px;font-weight:bold}.dl .r{color:#c00;font-weight:bold}
+.w{overflow-x:auto}
+#foot{background:#25364f;color:#aebbd0;text-align:center;padding:8px;font-size:11px;border-top:3px solid #e8a21a}
+#foot a{color:#fff}
+.cn{display:inline-block;background:#000;color:#0f0;font:bold 11px 'Courier New',monospace;padding:1px 5px;border:1px inset #888;letter-spacing:2px}
+@media (max-width:760px){#cols{flex-direction:column}#left{width:100%}#head h1{font-size:26px}}
+@media (prefers-reduced-motion:reduce){marquee{display:none}}
+a:focus-visible{outline:2px dotted #c00}
+</style>
+</head>
+<body>
+<div id="wrap">
+ <div id="top"><span>Вітаю, <b>Ярослав</b> | <a href="#">Мій профіль</a> | <a href="#">Повідомлення (3)</a> | <a href="#">Вихід</a></span><span id="now">—</span></div>
+ <div id="head">
+  <div class="sub">Внутрішня система організатора · проєкт № 0114-ОТ</div>
+  <h1>PR концерту <span>«ОТОЙ»</span></h1>
+  <div class="resp">Відповідальний PR-менеджер: <b>Ісіков Ярослав Андрійович</b></div>
+ </div>
+ <div id="menu"><a class="on" href="#">Головна</a><a href="#tasks">Задачі</a><a href="#sales">Продажі</a><a href="#budget">Бюджет</a><a href="#">Медіа-база</a><a href="#">Акредитації</a><a href="#">Файли</a><a href="#">Форум команди</a></div>
+ <div id="news"><marquee scrollamount="3">Нагадування: до 30.10 затвердити текст радіо-інтервʼю · макети ситілайтів чекають погодження від Stereo · не забути оновити звіт для організатора щопʼятниці</marquee></div>
+
+ <div id="cols">
+  <div id="left">
+   <div class="box"><div class="t">Афіша</div><div class="c">
+     <img class="poster" src="poster.jpg" alt="Афіша концерту ОТОЙ, 14.11, Stereo">
+     <div class="cap">Основна афіша · 700×1000</div></div></div>
+   <div class="box"><div class="t o">Про захід</div><div class="c"><dl>
+     <dt>Артист:</dt><dd>ОТОЙ</dd>
+     <dt>Дата:</dt><dd>14.11.2026, субота</dd>
+     <dt>Місто:</dt><dd>Київ</dd>
+     <dt>Клуб:</dt><dd>STEREO</dd>
+     <dt>Двері:</dt><dd>19:00</dd>
+     <dt>Старт:</dt><dd>20:00</dd>
+     <dt>Лейбл:</dt><dd>HMG</dd></dl></div></div>
+   <div class="box"><div class="t">Меню проєкту</div><div class="c"><ul class="m">
+     <li><a href="#tasks">Задачі й дедлайни</a></li><li><a href="#sales">Продажі квитків</a></li><li><a href="#budget">Бюджет</a></li>
+     <li><a href="#">Прес-реліз</a></li><li><a href="#">Контакти ЗМІ</a></li><li><a href="#">Контент-план</a></li><li><a href="#">Звіти</a></li></ul></div></div>
+   <div class="box"><div class="t">Статистика</div><div class="c">
+     Сьогодні в системі: <b>4</b><br>Відвідувань сьогодні: <b>37</b><br>Всього: <span class="cn">0048213</span></div></div>
+  </div>
+
+  <div id="main">
+   <div class="big">
+    <div class="cnt"><div class="l">До концерту залишилось</div><div class="n" id="days">—</div><div class="l">днів</div><small>14.11.2026 · 20:00</small></div>
+    <div class="box stats" style="margin:0"><div class="t">Коротко по проєкту</div><div class="c">
+      <div class="kpi" id="kpi"></div>
+      <table class="g"><tr><td>Продано квитків</td><td id="k1" class="num"></td></tr><tr><td>Виконання плану на сьогодні</td><td id="k2" class="num"></td></tr><tr><td>Витрачено бюджету</td><td id="k3" class="num"></td></tr></table>
+    </div></div>
+   </div>
+
+   <div class="box" id="sales"><div class="t">Продажі проти плану</div><div class="c">
+     <table class="g"><tr><th style="width:38%">Показник</th><th>Значення</th><th style="width:40%">Виконання</th></tr>
+      <tr><td>Продано / загальна ціль</td><td id="s1"></td><td><div class="pb b"><i id="s1b"></i></div></td></tr>
+      <tr><td>Продано / план на сьогодні</td><td id="s2"></td><td><div class="pb"><i id="s2b"></i></div></td></tr></table>
+     <br>
+     <div class="w"><table class="g"><tr><th>Канал продажів</th><th class="num">Квитків</th><th class="num">Частка</th><th>Графік</th></tr><tbody id="ch"></tbody></table></div>
+   </div></div>
+
+   <div class="box" id="tasks"><div class="t">Задачі</div><div class="c">
+     <div class="kpi" id="tk"></div>
+     <div class="w"><table class="g"><tr><th>№</th><th>Задача</th><th>Відповідальний</th><th>Дедлайн</th><th>Статус</th></tr><tbody id="tb"></tbody></table></div>
+   </div></div>
+
+   <div class="box"><div class="t r">Найближчі дедлайни</div><div class="c"><ul class="dl" id="dl"></ul></div></div>
+
+   <div class="box" id="budget"><div class="t o">Бюджет</div><div class="c">
+     <div class="w"><table class="g"><tr><th>Стаття витрат</th><th class="num">План, грн</th><th class="num">Витрачено, грн</th><th>%</th></tr><tbody id="bd"></tbody><tfoot id="bf"></tfoot></table></div>
+   </div></div>
+  </div>
+ </div>
+ <div id="foot">© 2014–2026 Система керування PR-проєктами v2.3 · Остання зміна: <span id="upd">—</span> · <a href="#">Допомога</a> · <a href="#">Зворотний зв’язок</a></div>
+</div>
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+var T=new Date();T.setHours(0,0,0,0);
+function D(m,d){return new Date(2026,m-1,d)}
+function f(d){return String(d.getDate()).padStart(2,'0')+'.'+String(d.getMonth()+1).padStart(2,'0')+'.'+d.getFullYear()}
+function n(x){return x.toLocaleString('uk-UA')}
+function dd(a,b){return Math.round((a-b)/864e5)}
+var CON=D(11,14),CAP=1800,PLAN_TODAY=900;
+var ch=[['Сайт квиткової платформи',428],['Каса Stereo',96],['Промокоди партнерів',147],['Розіграші та інвайти',41],['Інші канали',100]];
+var tasks=[
+['Затвердити прес-реліз','Ісіков Я.',D(10,22),'done'],
+['Фотосесія для прес-матеріалів','Кравець О.',D(10,20),'done'],
+['Запуск таргету Instagram / Facebook','Мельник Д.',D(10,23),'done'],
+['Договір із фото- та відеографом','Ісіков Я.',D(10,24),'done'],
+['Розсилка анонсу в ЗМІ (список А)','Ісіков Я.',D(10,26),'work'],
+['Погодити макети ситілайтів зі Stereo','Бондар Н.',D(10,27),'work'],
+['Інтервʼю для радіо — текст і час','Ісіков Я.',D(10,30),'work'],
+['Відкрити форму акредитації преси','Мельник Д.',D(10,31),'todo'],
+['Розіграш квитків з партнерським пабліком','Мельник Д.',D(11,2),'todo'],
+['Домовитись про відеоанонс із блогерами','Кравець О.',D(11,3),'work'],
+['Друк і роздача флаєрів (Поділ, Лук’янівка)','Бондар Н.',D(11,4),'todo'],
+['Закрити прийом заявок преси','Ісіков Я.',D(11,7),'todo'],
+['Підтвердити акредитації','Ісіков Я.',D(11,10),'todo'],
+['Саундчек і бекстейдж-зйомка','Кравець О.',D(11,14),'todo'],
+['Фотозвіт та пост-реліз','Ісіков Я.',D(11,16),'todo']];
+var bud=[['Таргетована реклама',60000,31200],['Зовнішня реклама (ситілайти)',45000,22500],['Фото та відеозйомка',28000,14000],['Блогери та інфлюенсери',25000,0],['Гонорар PR / SMM',15000,0],['Друк афіш і флаєрів',12000,3700]];
+
+function late(t){return t[3]!=='done'&&t[2]<T}
+var days=Math.max(0,dd(CON,T));$('days').textContent=days;
+$('now').textContent=f(T)+' · '+String(new Date().getHours()).padStart(2,'0')+':'+String(new Date().getMinutes()).padStart(2,'0');
+$('upd').textContent=f(new Date(T.getTime()-864e5))+' 18:42';
+
+var sold=ch.reduce(function(s,x){return s+x[1]},0),pt=Math.round(sold/PLAN_TODAY*100),pc=Math.round(sold/CAP*100);
+$('s1').textContent=n(sold)+' з '+n(CAP)+' ('+pc+'%)';$('s1b').style.width=pc+'%';
+$('s2').textContent=n(sold)+' з '+n(PLAN_TODAY)+' ('+pt+'%)';$('s2b').style.width=Math.min(100,pt)+'%';
+$('ch').innerHTML=ch.map(function(x){var p=Math.round(x[1]/sold*100);return '<tr><td>'+x[0]+'</td><td class="num">'+n(x[1])+'</td><td class="num">'+p+'%</td><td><div class="pb b"><i style="width:'+p+'%"></i></div></td></tr>'}).join('')+
+ '<tr><td><b>Всього</b></td><td class="num"><b>'+n(sold)+'</b></td><td class="num"><b>100%</b></td><td></td></tr>';
+
+var done=tasks.filter(function(t){return t[3]==='done'}).length,lt=tasks.filter(late).length,wk=tasks.filter(function(t){return t[3]==='work'&&!late(t)}).length;
+$('tk').innerHTML='<div><b>'+tasks.length+'</b>всього</div><div class="gr"><b>'+done+'</b>готово</div><div><b>'+wk+'</b>в роботі</div><div class="r"><b>'+lt+'</b>прострочено</div><div><b>'+(tasks.length-done-wk-lt)+'</b>в черзі</div>';
+var lab={done:'Готово',work:'В роботі',todo:'В черзі'};
+$('tb').innerHTML=tasks.map(function(t,i){var l=late(t);return '<tr><td>'+(i+1)+'</td><td>'+t[0]+'</td><td>'+t[1]+'</td><td>'+f(t[2])+'</td><td><span class="st '+(l?'late':t[3])+'">'+(l?'Прострочено':lab[t[3]])+'</span></td></tr>'}).join('');
+
+var up=tasks.filter(function(t){return t[3]!=='done'}).sort(function(a,b){return a[2]-b[2]}).slice(0,6);
+$('dl').innerHTML=up.map(function(t){var k=dd(t[2],T),s=k<0?'<span class="r">прострочено на '+(-k)+' дн.</span>':k===0?'<span class="r">сьогодні</span>':'через '+k+' дн.';
+ return '<li><span class="d">'+f(t[2]).slice(0,5)+'</span><span>'+t[0]+' — <i>'+t[1]+'</i> ('+s+')</span></li>'}).join('');
+
+var tp=0,ts=0;
+$('bd').innerHTML=bud.map(function(b){tp+=b[1];ts+=b[2];var p=Math.round(b[2]/b[1]*100);return '<tr><td>'+b[0]+'</td><td class="num">'+n(b[1])+'</td><td class="num">'+n(b[2])+'</td><td style="width:34%"><div class="pb o"><i style="width:'+p+'%"></i></div> '+p+'%</td></tr>'}).join('');
+var bp=Math.round(ts/tp*100);
+$('bf').innerHTML='<tr><td><b>Разом</b></td><td class="num"><b>'+n(tp)+'</b></td><td class="num"><b>'+n(ts)+'</b></td><td><b>'+bp+'%</b> · залишок '+n(tp-ts)+' грн</td></tr>';
+
+$('kpi').innerHTML='<div><b>'+days+'</b>днів</div><div class="gr"><b>'+pc+'%</b>цілі</div><div class="r"><b>'+lt+'</b>прострочено</div><div><b>'+bp+'%</b>бюджету</div>';
+$('k1').textContent=n(sold)+' з '+n(CAP);$('k2').textContent=pt+'%';$('k3').textContent=n(ts)+' з '+n(tp)+' грн';
+})();
+</script>
+</body>
+</html>
